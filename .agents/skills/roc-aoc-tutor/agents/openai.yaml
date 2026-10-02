@@ -1,0 +1,7 @@
+interface:
+  display_name: "Roc AoC Tutor"
+  short_description: "Learn Roc through Advent of Code"
+  default_prompt: "Use $roc-aoc-tutor to guide me through this Roc Advent of Code problem."
+
+policy:
+  allow_implicit_invocation: false
