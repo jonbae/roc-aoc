@@ -3,6 +3,8 @@
 This repository contains the Advent of Code 2020 solutions. Puzzle logic is
 kept pure in a module for each day, while one runner owns file I/O and output.
 
+For syntax lookup and practice, see the [Roc syntax study and reference guide](docs/roc-syntax-guide.md).
+
 ```text
 2020/
 ├── main.roc

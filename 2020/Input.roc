@@ -1,8 +1,10 @@
 Input :: [].{
 	# Preserve blank lines; some AoC puzzles use them as separators.
-	lines : Str -> List(Str)
-	lines = |text| Str.split_on(text, "\n")
+	split_on_lines : Str -> List(Str)
+	split_on_lines = |text| Str.split_on(text, "\n")
 
+	split_on_blank_lines : Str -> List(Str)
+	split_on_blank_lines = |text| Str.split_on(text, "\n\n")
 	# Useful for the common case where a trailing newline should be ignored.
 	trimmed_lines : Str -> List(Str)
 	trimmed_lines = |text| {

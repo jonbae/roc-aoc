@@ -3,7 +3,7 @@ import ../../Input
 Day02 :: [].{
 	solve : Str -> { part1 : Str, part2 : Str }
 	solve = |input| {
-		lines = Input.trimmed_lines(input)
+		lines = Input.split_on_lines(input)
 
 		solution1 = part1(lines).to_str()
 		solution2 = part2(lines).to_str()

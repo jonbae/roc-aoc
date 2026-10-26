@@ -3,7 +3,7 @@ import ../../Input
 Day01 :: [].{
 	solve : Str -> { part1 : Str, part2 : Str }
 	solve = |input| {
-		numbers = Input.trimmed_lines(input) |> List.map_try(U64.from_str)
+		numbers = Input.split_on_lines(input) |> List.map_try(U64.from_str)
 		nums = match numbers {
 			Ok(parsed_nums) => parsed_nums
 			Err(BadNumStr) => return {

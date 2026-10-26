@@ -9,6 +9,8 @@ import cli.Stdout
 import days/day01/Day01
 import days/day02/Day02
 import days/day03/Day03
+import days/day04/Day04
+
 run_day! = |input_path, solve| {
 	input = Path.read_utf8!(input_path)?
 	answers = solve(input)
@@ -25,6 +27,7 @@ run! = |args| {
 		"01" => run_day!("days/day01/input.txt", Day01.solve)
 		"02" => run_day!("days/day02/input.txt", Day02.solve)
 		"03" => run_day!("days/day03/input.txt", Day03.solve)
+		"04" => run_day!("days/day04/input.txt", Day04.solve)
 		_ => Err(UnknownDay(day))
 	}
 }
